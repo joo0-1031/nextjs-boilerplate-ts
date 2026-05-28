@@ -136,12 +136,15 @@ export default async function Home() {
                   </div>
                 </div>
               </div>
-              <div className="rounded-lg bg-emerald-300 p-4 text-emerald-950">
-                <p className="text-sm font-semibold">Next step</p>
+              <a
+                href="/board"
+                className="block rounded-lg bg-emerald-300 p-4 text-emerald-950 transition hover:bg-emerald-200"
+              >
+                <p className="text-sm font-semibold">Open the board</p>
                 <p className="mt-1 text-sm leading-6">
-                  Add your first real feature on top of this authenticated shell.
+                  Browse users and posts backed by Prisma.
                 </p>
-              </div>
+              </a>
             </aside>
           </div>
         </section>
@@ -177,6 +180,11 @@ export default async function Home() {
                   <Button size="lg" className="h-11 gap-2 px-4">
                     Continue with Google
                     <ArrowRight className="size-4" />
+                  </Button>
+                </a>
+                <a href="/board">
+                  <Button variant="secondary" size="lg" className="h-11 px-4">
+                    View board
                   </Button>
                 </a>
                 <a href="https://vercel.com" target="_blank" rel="noreferrer">
